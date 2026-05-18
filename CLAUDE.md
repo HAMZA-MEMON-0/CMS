@@ -48,23 +48,23 @@ CMS/
 - [x] Commit: "chore: project foundation and configuration"
 
 ### Phase 2 — HTML Skeleton (`index.html`)
-- [ ] Document head: charset, viewport, SEO meta, Open Graph, Twitter card, JSON-LD schema
-- [ ] Preconnect to Google Fonts + Font Awesome CDN
-- [ ] `<header>` with logo, nav (7 links), language switcher, search trigger, hamburger
-- [ ] Mobile nav overlay (slide-in)
-- [ ] `<section class="hero">` with headline, subheadline, dual CTAs, scroll indicator
-- [ ] `<section class="focus-areas">` with 8 cards (Health, Education, Justice, Environment, Gender Equality, Sustainable Communities, Economic Growth, Peace & Diplomacy)
-- [ ] `<section class="articles">` with 6 article cards (category tag, thumbnail, title, excerpt, meta, audio icon)
-- [ ] `<section class="media">` featured podcast player + 4 episode cards
-- [ ] `<section class="projects">` featured campaign + 3 campaign cards
-- [ ] `<section class="partners">` 6 partner logo placeholders + CTA
-- [ ] `<section class="social">` 3 platform feed mockups (Twitter, Facebook, Instagram)
-- [ ] Floating social share rail (left side, fixed)
-- [ ] `<section class="newsletter">` heading + form + trust indicators
-- [ ] `<footer>` 4-column grid (brand+mission, quick links, focus list, connect) + dev credit + admin link
-- [ ] Back-to-top button
-- [ ] All translatable text wrapped with `data-i18n="key"` attributes
-- [ ] Commit: "feat: semantic HTML structure for all homepage sections"
+- [x] Document head: charset, viewport, SEO meta, Open Graph, Twitter card, JSON-LD schema
+- [x] Preconnect to Google Fonts + Font Awesome CDN
+- [x] `<header>` with logo, nav (7 links), language switcher, search trigger, hamburger
+- [x] Mobile nav overlay (slide-in)
+- [x] `<section class="hero">` with headline, subheadline, dual CTAs, scroll indicator
+- [x] `<section class="focus-areas">` with 8 cards (Health, Education, Justice, Environment, Gender Equality, Sustainable Communities, Economic Growth, Peace & Diplomacy)
+- [x] `<section class="articles">` with 6 article cards (category tag, thumbnail, title, excerpt, meta, audio icon)
+- [x] `<section class="media">` featured podcast player + 4 episode cards
+- [x] `<section class="projects">` featured campaign + 3 campaign cards
+- [x] `<section class="partners">` 6 partner logo placeholders + CTA
+- [x] `<section class="social">` 3 platform feed mockups (Twitter, Facebook, Instagram)
+- [x] Floating social share rail (left side, fixed)
+- [x] `<section class="newsletter">` heading + form + trust indicators
+- [x] `<footer>` 4-column grid (brand+mission, quick links, focus list, connect) + dev credit + admin link
+- [x] Back-to-top button
+- [x] All translatable text wrapped with `data-i18n="key"` attributes
+- [x] Commit: "feat: semantic HTML structure for all homepage sections"
 
 ### Phase 3 — CSS Foundation (`css/style.css`)
 - [ ] CSS reset (margin, padding, box-sizing, font inheritance)

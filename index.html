@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title data-i18n="metaTitle">Inara — Light for a Better World | Social Entrepreneurship & Advocacy</title>
+
+  <meta name="description" content="Inara is a global social entrepreneurship and advocacy platform empowering communities across health, education, justice, environment, gender equality, and sustainable development.">
+  <meta name="keywords" content="social entrepreneurship, advocacy, health, education, justice, environment, gender equality, sustainable development, peace, diplomacy, global change, Inara">
+  <meta name="author" content="Inara">
+  <meta name="theme-color" content="#2C5F8D">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inara — Light for a Better World">
+  <meta property="og:description" content="Advocacy, awareness, and action across eight pillars of global change.">
+  <meta property="og:url" content="https://inara-platform.netlify.app">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&h=630&fit=crop&auto=format&q=80">
+  <meta property="og:site_name" content="Inara">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inara — Light for a Better World">
+  <meta name="twitter:description" content="Advocacy, awareness, and action across eight pillars of global change.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&h=630&fit=crop&auto=format&q=80">
+
+  <link rel="canonical" href="https://inara-platform.netlify.app/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%232C5F8D'/%3E%3Ctext x='32' y='44' font-family='Poppins,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='white'%3EI%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Inara",
+    "alternateName": "Inara Global Advocacy",
+    "url": "https://inara-platform.netlify.app",
+    "logo": "https://inara-platform.netlify.app/images/logo.svg",
+    "description": "Global social entrepreneurship and advocacy platform.",
+    "sameAs": [
+      "https://facebook.com/inara",
+      "https://twitter.com/inara",
+      "https://instagram.com/inara",
+      "https://linkedin.com/company/inara"
+    ],
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Health", "Education", "Justice", "Environment", "Gender Equality", "Sustainable Communities", "Economic Growth", "Peace and Diplomacy"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to main content</a>
+
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand" aria-label="Inara — home">
+        <span class="brand-mark" aria-hidden="true">
+          <i class="fa-solid fa-sun"></i>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Inara</span>
+          <span class="brand-tagline" data-i18n="brandTagline">Light for a Better World</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active" data-i18n="navHome" aria-current="page">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">About</a></li>
+          <li><a href="#articles" class="nav-link" data-i18n="navArticles">Articles</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="navProjects">Projects</a></li>
+          <li><a href="#media" class="nav-link" data-i18n="navMedia">Media</a></li>
+          <li><a href="#partners" class="nav-link" data-i18n="navPartners">Partners</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-wrapper">
+          <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open search" aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <form class="search-form" id="searchForm" role="search">
+            <input type="search" class="search-input" placeholder="Search articles, projects…" data-i18n-placeholder="searchPlaceholder" aria-label="Search">
+            <button type="submit" class="search-submit" aria-label="Submit search">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="language-switcher" id="languageSwitcher">
+          <button class="lang-current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langLabel">EN</span>
+            <i class="fa-solid fa-chevron-down lang-chevron"></i>
+          </button>
+          <ul class="lang-options" role="listbox">
+            <li><button data-lang="en" role="option"><span class="flag">🇬🇧</span> English</button></li>
+            <li><button data-lang="ur" role="option"><span class="flag">🇵🇰</span> اردو</button></li>
+            <li><button data-lang="ar" role="option"><span class="flag">🇸🇦</span> العربية</button></li>
+          </ul>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="#home" data-i18n="navHome">Home</a></li>
+      <li><a href="#about" data-i18n="navAbout">About</a></li>
+      <li><a href="#articles" data-i18n="navArticles">Articles</a></li>
+      <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+      <li><a href="#media" data-i18n="navMedia">Media</a></li>
+      <li><a href="#partners" data-i18n="navPartners">Partners</a></li>
+      <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+    </ul>
+    <div class="mobile-socials">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <aside class="share-rail" aria-label="Share this page">
+    <button class="share-btn" data-share="facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></button>
+    <button class="share-btn" data-share="twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></button>
+    <button class="share-btn" data-share="linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+    <button class="share-btn" data-share="whatsapp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+    <button class="share-btn" data-share="email" aria-label="Share by email"><i class="fa-solid fa-envelope"></i></button>
+    <button class="share-btn" data-share="copy" aria-label="Copy link"><i class="fa-solid fa-link"></i></button>
+  </aside>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&h=1080&fit=crop&auto=format&q=80" alt="">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <span class="hero-eyebrow" data-i18n="heroEyebrow">Global Advocacy Platform</span>
+        <h1 class="hero-title" data-i18n="heroTitle">Empowering Global Communities for Sustainable Change</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Advocacy, awareness, and action across Health, Education, Justice, Environment, Gender Equality, and beyond.</p>
+        <div class="hero-actions">
+          <a href="#focus" class="btn btn-primary" data-i18n="heroCtaPrimary">Explore Our Mission</a>
+          <a href="#articles" class="btn btn-outline" data-i18n="heroCtaSecondary">Read Latest Articles</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>50K+</strong><span data-i18n="statReach">Lives Reached</span></div>
+          <div class="stat"><strong>120+</strong><span data-i18n="statPartners">Partner Organizations</span></div>
+          <div class="stat"><strong>45</strong><span data-i18n="statCountries">Countries Served</span></div>
+        </div>
+      </div>
+      <a href="#focus" class="scroll-indicator" aria-label="Scroll to content">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section id="focus" class="focus-areas section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow" data-i18n="focusEyebrow">What We Stand For</span>
+          <h2 class="section-title" data-i18n="focusTitle">Our Impact Areas</h2>
+          <p class="section-subtitle" data-i18n="focusSubtitle">Eight pillars guiding our work toward a fairer, healthier, more sustainable world.</p>
+        </header>
+
+        <div class="focus-grid">
+          <article class="focus-card animate-on-scroll" data-accent="red">
+            <div class="focus-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3 data-i18n="focusHealthTitle">Health</h3>
+            <p data-i18n="focusHealthDesc">Expanding access to quality healthcare and championing public-health awareness across underserved regions.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="orange">
+            <div class="focus-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 data-i18n="focusEducationTitle">Education</h3>
+            <p data-i18n="focusEducationDesc">Driving equitable access to lifelong learning, from early childhood through professional development.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="purple">
+            <div class="focus-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3 data-i18n="focusJusticeTitle">Justice</h3>
+            <p data-i18n="focusJusticeDesc">Defending human rights, fighting inequity, and supporting fair legal systems for every individual.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="green">
+            <div class="focus-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3 data-i18n="focusEnvironmentTitle">Environment</h3>
+            <p data-i18n="focusEnvironmentDesc">Mobilising climate action, conservation, and a transition to a clean, regenerative future.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="purple">
+            <div class="focus-icon"><i class="fa-solid fa-venus-mars"></i></div>
+            <h3 data-i18n="focusGenderTitle">Gender Equality</h3>
+            <p data-i18n="focusGenderDesc">Empowering women and marginalised genders through advocacy, leadership, and economic opportunity.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="green">
+            <div class="focus-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+            <h3 data-i18n="focusCommunitiesTitle">Sustainable Communities</h3>
+            <p data-i18n="focusCommunitiesDesc">Building resilient neighbourhoods through sustainable infrastructure and grassroots leadership.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="orange">
+            <div class="focus-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 data-i18n="focusEconomyTitle">Economic Growth</h3>
+            <p data-i18n="focusEconomyDesc">Fostering inclusive prosperity through entrepreneurship, fair trade, and skills development.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="focus-card animate-on-scroll" data-accent="blue">
+            <div class="focus-icon"><i class="fa-solid fa-dove"></i></div>
+            <h3 data-i18n="focusPeaceTitle">Peace &amp; Diplomacy</h3>
+            <p data-i18n="focusPeaceDesc">Promoting dialogue, conflict resolution, and global cooperation for a harmonious world.</p>
+            <a href="#" class="focus-link" data-i18n="learnMore">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles" class="articles section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow" data-i18n="articlesEyebrow">From Our Newsroom</span>
+          <h2 class="section-title" data-i18n="articlesTitle">Latest Articles &amp; Insights</h2>
+          <p class="section-subtitle" data-i18n="articlesSubtitle">Stories, research, and perspectives from advocates around the world.</p>
+        </header>
+
+        <div class="articles-grid">
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=450&fit=crop&auto=format&q=80" alt="Healthcare worker visiting a rural community" loading="lazy">
+              <span class="article-tag" data-accent="red" data-i18n="catHealth">Health</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article1Title">Mobile Clinics Are Closing the Rural Healthcare Gap</a></h3>
+              <p data-i18n="article1Excerpt">Frontline workers describe how mobile units are reaching families that have never seen a doctor before — and what comes next.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Aisha Khan</span>
+                <span><i class="fa-solid fa-calendar"></i> 12 May 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=450&fit=crop&auto=format&q=80" alt="Children learning in a community classroom" loading="lazy">
+              <span class="article-tag" data-accent="orange" data-i18n="catEducation">Education</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article2Title">Why Mother-Tongue Instruction Transforms Learning Outcomes</a></h3>
+              <p data-i18n="article2Excerpt">Research from twelve countries shows that children taught in their first language outperform peers by every measure.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Daniel Okafor</span>
+                <span><i class="fa-solid fa-calendar"></i> 08 May 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=450&fit=crop&auto=format&q=80" alt="Volunteers planting trees in a coastal area" loading="lazy">
+              <span class="article-tag" data-accent="green" data-i18n="catEnvironment">Environment</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article3Title">Coastal Reforestation: A Community Blueprint That Works</a></h3>
+              <p data-i18n="article3Excerpt">A five-year project across South Asia restored 4,200 hectares of mangroves — and rebuilt local livelihoods at the same time.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Maya Patel</span>
+                <span><i class="fa-solid fa-calendar"></i> 03 May 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800&h=450&fit=crop&auto=format&q=80" alt="Women leaders convening at a roundtable" loading="lazy">
+              <span class="article-tag" data-accent="purple" data-i18n="catGender">Gender Equality</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article4Title">Women-Led Cooperatives Are Reshaping Local Economies</a></h3>
+              <p data-i18n="article4Excerpt">From textile collectives to fintech startups, women-led cooperatives are quietly outperforming traditional models.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Fatima Hassan</span>
+                <span><i class="fa-solid fa-calendar"></i> 28 Apr 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&h=450&fit=crop&auto=format&q=80" alt="Community legal-aid workshop" loading="lazy">
+              <span class="article-tag" data-accent="purple" data-i18n="catJustice">Justice</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article5Title">Community Paralegals Are Filling the Access-to-Justice Gap</a></h3>
+              <p data-i18n="article5Excerpt">Trained locals are bringing justice to villages that lawyers rarely reach — and the results are striking.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Tariq Ahmed</span>
+                <span><i class="fa-solid fa-calendar"></i> 22 Apr 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-card animate-on-scroll">
+            <a href="#" class="article-thumb">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=450&fit=crop&auto=format&q=80" alt="Young entrepreneur reviewing market figures" loading="lazy">
+              <span class="article-tag" data-accent="orange" data-i18n="catEconomy">Economic Growth</span>
+            </a>
+            <div class="article-body">
+              <h3><a href="#" data-i18n="article6Title">Microfinance 2.0: Lessons From the Last Decade</a></h3>
+              <p data-i18n="article6Excerpt">Smaller loans, smarter risk models, and a focus on women borrowers — the next generation of microfinance has arrived.</p>
+              <div class="article-meta">
+                <span><i class="fa-solid fa-user"></i> Layla Mansour</span>
+                <span><i class="fa-solid fa-calendar"></i> 17 Apr 2026</span>
+                <span class="audio-badge" title="Listen to article"><i class="fa-solid fa-headphones"></i></span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-footer">
+          <a href="#" class="btn btn-secondary" data-i18n="viewAllArticles">View All Articles <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="media section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow" data-i18n="mediaEyebrow">Listen &amp; Watch</span>
+          <h2 class="section-title" data-i18n="mediaTitle">Our Media Library</h2>
+          <p class="section-subtitle" data-i18n="mediaSubtitle">Podcasts, interviews, and video stories from the frontlines of change.</p>
+        </header>
+
+        <div class="featured-episode animate-on-scroll">
+          <div class="episode-art">
+            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&h=800&fit=crop&auto=format&q=80" alt="Podcast featured episode artwork">
+            <span class="featured-badge" data-i18n="featuredEpisode">Featured Episode</span>
+          </div>
+          <div class="episode-details">
+            <span class="episode-meta"><i class="fa-solid fa-microphone"></i> <span data-i18n="podcastName">The Inara Podcast</span> · <span data-i18n="episodeNumber">Episode 24</span></span>
+            <h3 data-i18n="featuredEpisodeTitle">Voices of Change: A Conversation with Frontline Advocates</h3>
+            <p data-i18n="featuredEpisodeDesc">Three changemakers across three continents discuss what it takes to build movements that last — and why hope is a strategy.</p>
+            <div class="audio-player" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+              <button class="ap-play" aria-label="Play episode"><i class="fa-solid fa-play"></i></button>
+              <div class="ap-progress">
+                <div class="ap-time ap-current">0:00</div>
+                <div class="ap-bar"><div class="ap-fill"></div></div>
+                <div class="ap-time ap-total">0:00</div>
+              </div>
+              <button class="ap-speed" aria-label="Playback speed">1x</button>
+              <button class="ap-volume" aria-label="Mute"><i class="fa-solid fa-volume-high"></i></button>
+              <a class="ap-download" href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download aria-label="Download episode"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="episodes-grid">
+          <article class="episode-card animate-on-scroll">
+            <div class="episode-thumb">
+              <img src="https://images.unsplash.com/photo-1487537708572-3c850b5e856e?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h4 data-i18n="ep1Title">Climate Justice Beyond Borders</h4>
+            <span class="ep-duration"><i class="fa-regular fa-clock"></i> 28 min</span>
+          </article>
+
+          <article class="episode-card animate-on-scroll">
+            <div class="episode-thumb">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h4 data-i18n="ep2Title">The Future of Public Education</h4>
+            <span class="ep-duration"><i class="fa-regular fa-clock"></i> 34 min</span>
+          </article>
+
+          <article class="episode-card animate-on-scroll">
+            <div class="episode-thumb">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h4 data-i18n="ep3Title">Building Peace After Conflict</h4>
+            <span class="ep-duration"><i class="fa-regular fa-clock"></i> 41 min</span>
+          </article>
+
+          <article class="episode-card animate-on-scroll">
+            <div class="episode-thumb">
+              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <h4 data-i18n="ep4Title">Why Local Leadership Wins</h4>
+            <span class="ep-duration"><i class="fa-regular fa-clock"></i> 22 min</span>
+          </article>
+        </div>
+
+        <div class="tts-note animate-on-scroll">
+          <i class="fa-solid fa-volume-high"></i>
+          <span data-i18n="ttsNote">Every Inara article includes text-to-speech for accessibility — look for the headphones icon.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow" data-i18n="projectsEyebrow">In Action</span>
+          <h2 class="section-title" data-i18n="projectsTitle">Active Projects &amp; Campaigns</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">Initiatives turning advocacy into measurable impact, right now.</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=900&fit=crop&auto=format&q=80" alt="Children at a community learning centre">
+            <div class="project-overlay">
+              <span class="project-badge" data-i18n="featuredProject">Featured Project</span>
+              <h3 data-i18n="project1Title">Schools Without Walls</h3>
+              <p class="project-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="project1Location">East Africa &amp; South Asia</span></p>
+              <p data-i18n="project1Desc">Bringing classrooms to children in remote communities through mobile learning hubs, solar-powered tablets, and locally trained teachers.</p>
+              <div class="project-stats">
+                <div><strong>12,400</strong><span data-i18n="statStudents">Students Enrolled</span></div>
+                <div><strong>87</strong><span data-i18n="statTeachers">Teachers Trained</span></div>
+                <div><strong>34</strong><span data-i18n="statVillages">Villages</span></div>
+              </div>
+              <a href="#" class="btn btn-primary" data-i18n="learnMoreCta">Learn More</a>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <div class="project-overlay">
+              <span class="project-status status-active" data-i18n="statusActive">Active</span>
+              <h3 data-i18n="project2Title">Clean Rivers Initiative</h3>
+              <p data-i18n="project2Desc">Restoring waterways with local fishing communities across Southeast Asia.</p>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <div class="project-overlay">
+              <span class="project-status status-active" data-i18n="statusActive">Active</span>
+              <h3 data-i18n="project3Title">Voices of the Unheard</h3>
+              <p data-i18n="project3Desc">Documenting underreported human-rights stories from twelve countries.</p>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <div class="project-overlay">
+              <span class="project-status status-complete" data-i18n="statusComplete">Completed</span>
+              <h3 data-i18n="project4Title">Health Outreach 2025</h3>
+              <p data-i18n="project4Desc">Delivered preventive care to 28,000 people in underserved communities.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="partners section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow" data-i18n="partnersEyebrow">Stronger Together</span>
+          <h2 class="section-title" data-i18n="partnersTitle">Our Global Partners</h2>
+          <p class="section-subtitle" data-i18n="partnersSubtitle">Collaborating with NGOs, institutions, and visionary organisations.</p>
+        </header>
+
+        <div class="partners-grid">
+          <div class="partner-logo"><span>UNESCO</span></div>
+          <div class="partner-logo"><span>WHO Global</span></div>
+          <div class="partner-logo"><span>OXFAM</span></div>
+          <div class="partner-logo"><span>Red Crescent</span></div>
+          <div class="partner-logo"><span>UN Women</span></div>
+          <div class="partner-logo"><span>Greenpeace</span></div>
+          <div class="partner-logo"><span>Amnesty Intl.</span></div>
+          <div class="partner-logo"><span>Save the Children</span></div>
+          <div class="partner-logo"><span>Doctors Without Borders</span></div>
+          <div class="partner-logo"><span>World Vision</span></div>
+          <div class="partner-logo"><span>Habitat for Humanity</span></div>
+          <div class="partner-logo"><span>Care International</span></div>
+        </div>
+
+        <div class="partners-cta animate-on-scroll">
+          <p data-i18n="partnersCtaText">Interested in partnering with us to drive global change?</p>
+          <a href="#contact" class="btn btn-outline-dark" data-i18n="partnersCtaBtn">Become a Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="social section">
+      <div class="container">
+        <header class="section-head animate-on-scroll">
+          <span class="section-eyebrow light" data-i18n="socialEyebrow">Get Involved</span>
+          <h2 class="section-title light" data-i18n="socialTitle">Join the Conversation</h2>
+          <p class="section-subtitle light" data-i18n="socialSubtitle">Follow us, share your voice, and amplify the stories that matter.</p>
+        </header>
+
+        <div class="social-grid">
+          <article class="social-feed animate-on-scroll">
+            <header class="feed-head">
+              <i class="fa-brands fa-x-twitter"></i>
+              <div>
+                <strong>@inara_global</strong>
+                <span data-i18n="followUs">Follow us</span>
+              </div>
+            </header>
+            <div class="feed-posts">
+              <div class="feed-post">
+                <p data-i18n="twitterPost1">New report just dropped: how community paralegals are transforming access to justice across South Asia. Read &amp; share. #JusticeForAll</p>
+                <small>2h · 124 reposts · 480 likes</small>
+              </div>
+              <div class="feed-post">
+                <p data-i18n="twitterPost2">Episode 24 of the Inara Podcast is live — three frontline advocates on what hope looks like in 2026. 🎧</p>
+                <small>1d · 86 reposts · 312 likes</small>
+              </div>
+            </div>
+            <a href="#" class="feed-link">View on Twitter <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="social-feed animate-on-scroll">
+            <header class="feed-head">
+              <i class="fa-brands fa-facebook-f"></i>
+              <div>
+                <strong>Inara Global</strong>
+                <span data-i18n="likeUs">Like our page</span>
+              </div>
+            </header>
+            <div class="feed-posts">
+              <div class="feed-post">
+                <p data-i18n="facebookPost1">12,400 students are now learning through our Schools Without Walls program. Meet some of them in this short film 👇</p>
+                <small>3h · 2.1K likes · 318 comments</small>
+              </div>
+              <div class="feed-post">
+                <p data-i18n="facebookPost2">Join our virtual roundtable next Thursday on women-led microfinance. Free, open to all advocates and learners.</p>
+                <small>2d · 980 likes · 142 comments</small>
+              </div>
+            </div>
+            <a href="#" class="feed-link">View on Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="social-feed animate-on-scroll">
+            <header class="feed-head">
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <strong>@inara.global</strong>
+                <span data-i18n="followUs">Follow us</span>
+              </div>
+            </header>
+            <div class="feed-posts">
+              <div class="feed-post">
+                <p data-i18n="instagramPost1">From the field: mangrove restoration in coastal Bangladesh. 4,200 hectares restored — and counting. 🌱</p>
+                <small>5h · 4.7K likes · 92 comments</small>
+              </div>
+              <div class="feed-post">
+                <p data-i18n="instagramPost2">Behind the scenes at our podcast studio in Nairobi 🎙 Tap to listen to the latest episode.</p>
+                <small>1d · 2.9K likes · 78 comments</small>
+              </div>
+            </div>
+            <a href="#" class="feed-link">View on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter section">
+      <div class="container">
+        <div class="newsletter-card animate-on-scroll">
+          <div class="newsletter-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <h2 data-i18n="newsletterTitle">Stay Informed. Take Action.</h2>
+          <p data-i18n="newsletterSubtitle">Subscribe to our weekly newsletter for stories, research, and opportunities to get involved.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <label class="sr-only" for="newsletterEmail" data-i18n="emailLabel">Email address</label>
+            <input id="newsletterEmail" type="email" required placeholder="Enter your email address" data-i18n-placeholder="newsletterPlaceholder">
+            <button type="submit" class="btn btn-primary-dark" data-i18n="subscribe">Subscribe</button>
+          </form>
+          <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+          <ul class="newsletter-trust">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="trustWeekly">Weekly updates</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="trustNoSpam">No spam, ever</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="trustUnsubscribe">Unsubscribe anytime</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="#home" class="brand brand-footer">
+            <span class="brand-mark"><i class="fa-solid fa-sun"></i></span>
+            <span class="brand-name">Inara</span>
+          </a>
+          <p data-i18n="footerMission">Inara is a global platform for social entrepreneurship and advocacy, amplifying voices and accelerating action across eight pillars of change.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerExplore">Explore</h4>
+          <ul>
+            <li><a href="#about" data-i18n="navAbout">About</a></li>
+            <li><a href="#focus" data-i18n="navFocus">Focus Areas</a></li>
+            <li><a href="#articles" data-i18n="navArticles">Articles</a></li>
+            <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+            <li><a href="#media" data-i18n="navMedia">Media</a></li>
+            <li><a href="#partners" data-i18n="navPartners">Partners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerFocus">Our Focus</h4>
+          <ul class="footer-focus-list">
+            <li data-i18n="focusHealthTitle">Health</li>
+            <li data-i18n="focusEducationTitle">Education</li>
+            <li data-i18n="focusJusticeTitle">Justice</li>
+            <li data-i18n="focusEnvironmentTitle">Environment</li>
+            <li data-i18n="focusGenderTitle">Gender Equality</li>
+            <li data-i18n="focusCommunitiesTitle">Sustainable Communities</li>
+            <li data-i18n="focusEconomyTitle">Economic Growth</li>
+            <li data-i18n="focusPeaceTitle">Peace &amp; Diplomacy</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerConnect">Connect</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@inara-platform.org">hello@inara-platform.org</a></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+923138113962">+92 313 811 3962</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="footerLocation">Global · Headquartered in Karachi, Pakistan</span></li>
+          </ul>
+          <a href="#admin" class="admin-link"><i class="fa-solid fa-lock"></i> <span data-i18n="adminAccess">Admin Access</span></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear">2026</span> Inara. <span data-i18n="footerRights">All rights reserved.</span> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p class="dev-credit">
+          <span data-i18n="footerDesigned">Designed &amp; Developed by</span>
+          <a href="https://hamza-memon-0.github.io/my-portfolio/" target="_blank" rel="noopener"><strong>Hamza Memon</strong></a> ·
+          <a href="mailto:hamza.memon262830@gmail.com">hamza.memon262830@gmail.com</a> ·
+          <a href="https://wa.me/923138113962" target="_blank" rel="noopener">WhatsApp: +92 313 811 3962</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/translations.js" defer></script>
+  <script src="js/audio-player.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
