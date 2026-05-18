@@ -67,44 +67,44 @@ CMS/
 - [x] Commit: "feat: semantic HTML structure for all homepage sections"
 
 ### Phase 3 — CSS Foundation (`css/style.css`)
-- [ ] CSS reset (margin, padding, box-sizing, font inheritance)
-- [ ] `:root` design tokens (colors, fonts, sizes, spacing, shadows, radii)
-- [ ] Base typography + body styles
-- [ ] Container + section padding utilities
-- [ ] Button base styles (`.btn`, `.btn-primary`, `.btn-secondary`, `.btn-outline`)
-- [ ] Smooth scroll + scroll-behavior + scroll-padding-top
-- [ ] Focus-visible outlines for accessibility
+- [x] CSS reset (margin, padding, box-sizing, font inheritance)
+- [x] `:root` design tokens (colors, fonts, sizes, spacing, shadows, radii)
+- [x] Base typography + body styles
+- [x] Container + section padding utilities
+- [x] Button base styles (`.btn`, `.btn-primary`, `.btn-secondary`, `.btn-outline`)
+- [x] Smooth scroll + scroll-behavior + scroll-padding-top
+- [x] Focus-visible outlines for accessibility
 
 ### Phase 4 — Component Styles
-- [ ] Header (sticky, shadow on scroll, blur backdrop)
-- [ ] Navigation (desktop horizontal, active underline, hover transitions)
-- [ ] Language switcher dropdown (EN/UR/AR with flag emojis)
-- [ ] Search bar (icon-button → expandable input)
-- [ ] Mobile hamburger animation (3 lines → X)
-- [ ] Hero (full-bleed image, dark overlay, centered content, animated entrance)
-- [ ] Focus-area cards (4×2 grid, icon + title + desc + link, hover lift)
-- [ ] Article cards (3×2 grid, thumbnail with hover zoom, category badge, meta row)
-- [ ] Featured podcast player (image left, custom HTML5 controls right)
-- [ ] Episode mini-cards (compact 4-column grid)
-- [ ] Featured project (spans 2 rows, image bg + overlay)
-- [ ] Project cards (image with bottom gradient + content)
-- [ ] Partner logo grid (grayscale → color on hover)
-- [ ] Social feed cards (3-column dark gradient section)
-- [ ] Floating share rail (vertical, fixed left, circular icons)
-- [ ] Newsletter (vibrant green section, inline email form)
-- [ ] Footer (dark, 4-column grid, hover indent on links)
-- [ ] Back-to-top button (fixed bottom-right, fade in on scroll)
-- [ ] Commit: "style: complete design system and component styles"
+- [x] Header (sticky, shadow on scroll, blur backdrop)
+- [x] Navigation (desktop horizontal, active underline, hover transitions)
+- [x] Language switcher dropdown (EN/UR/AR with flag emojis)
+- [x] Search bar (icon-button → expandable input)
+- [x] Mobile hamburger animation (3 lines → X)
+- [x] Hero (full-bleed image, dark overlay, centered content, animated entrance)
+- [x] Focus-area cards (4×2 grid, icon + title + desc + link, hover lift)
+- [x] Article cards (3×2 grid, thumbnail with hover zoom, category badge, meta row)
+- [x] Featured podcast player (image left, custom HTML5 controls right)
+- [x] Episode mini-cards (compact 4-column grid)
+- [x] Featured project (spans 2 rows, image bg + overlay)
+- [x] Project cards (image with bottom gradient + content)
+- [x] Partner logo grid (grayscale → color on hover)
+- [x] Social feed cards (3-column dark gradient section)
+- [x] Floating share rail (vertical, fixed left, circular icons)
+- [x] Newsletter (vibrant green section, inline email form)
+- [x] Footer (dark, 4-column grid, hover indent on links)
+- [x] Back-to-top button (fixed bottom-right, fade in on scroll)
+- [x] Commit: "style: complete design system and component styles"
 
 ### Phase 5 — Responsive Design
-- [ ] Mobile-first breakpoints: 576 / 768 / 992 / 1200 / 1400px
-- [ ] Mobile nav: full-screen overlay, stagger animations
-- [ ] Grids collapse: 4→2→1 for focus areas, 3→2→1 for articles
-- [ ] Hero: reduce font sizes, stack CTAs on small screens
-- [ ] Newsletter form stacks on mobile
-- [ ] Floating share rail hidden < 992px
-- [ ] Touch targets minimum 44×44px
-- [ ] Commit: "style: responsive layouts for mobile, tablet, desktop"
+- [x] Mobile-first breakpoints: 576 / 768 / 992 / 1200 / 1400px
+- [x] Mobile nav: full-screen overlay, stagger animations
+- [x] Grids collapse: 4→2→1 for focus areas, 3→2→1 for articles
+- [x] Hero: reduce font sizes, stack CTAs on small screens
+- [x] Newsletter form stacks on mobile
+- [x] Floating share rail hidden < 992px
+- [x] Touch targets minimum 44×44px
+- [x] Commit: "style: responsive layouts for mobile, tablet, desktop"
 
 ### Phase 6 — JavaScript Behavior
 - [ ] `script.js`: mobile menu toggle, hamburger animation, body scroll lock
