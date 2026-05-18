@@ -107,29 +107,29 @@ CMS/
 - [x] Commit: "style: responsive layouts for mobile, tablet, desktop"
 
 ### Phase 6 — JavaScript Behavior
-- [ ] `script.js`: mobile menu toggle, hamburger animation, body scroll lock
-- [ ] Sticky header shadow on scroll
-- [ ] Search expand/collapse + click-outside-to-close
-- [ ] Smooth-scroll for anchor links
-- [ ] Intersection Observer scroll-in animations (`.animate-on-scroll`)
-- [ ] Back-to-top button show/hide + scroll
-- [ ] Newsletter form validation + success message
-- [ ] Social share Web Share API + fallback to platform URLs
-- [ ] Lazy-load images via `loading="lazy"` attribute
+- [x] `script.js`: mobile menu toggle, hamburger animation, body scroll lock
+- [x] Sticky header shadow on scroll
+- [x] Search expand/collapse + click-outside-to-close
+- [x] Smooth-scroll for anchor links
+- [x] Intersection Observer scroll-in animations (`.animate-on-scroll`)
+- [x] Back-to-top button show/hide + scroll
+- [x] Newsletter form validation + success message
+- [x] Social share Web Share API + fallback to platform URLs
+- [x] Lazy-load images via `loading="lazy"` attribute
 
 ### Phase 7 — Multilingual (EN / UR / AR)
-- [ ] `translations.js` — full key-value object for all 3 languages
-- [ ] `switchLanguage(lang)` — updates `[data-i18n]` content + `<html lang>` + `dir` attribute
-- [ ] RTL CSS overrides (`[dir="rtl"]` selectors for flex direction, text-align, logical margins)
-- [ ] Arabic/Urdu font stack (Noto Naskh Arabic / Noto Nastaliq Urdu)
-- [ ] Persist preference to `localStorage` + restore on load
+- [x] `translations.js` — full key-value object for all 3 languages
+- [x] `switchLanguage(lang)` — updates `[data-i18n]` content + `<html lang>` + `dir` attribute
+- [x] RTL CSS overrides (`[dir="rtl"]` selectors for flex direction, text-align, logical margins)
+- [x] Arabic/Urdu font stack (Noto Naskh Arabic / Noto Nastaliq Urdu)
+- [x] Persist preference to `localStorage` + restore on load
 
 ### Phase 8 — Audio Player
-- [ ] `audio-player.js` — custom controls (play/pause, seek, time, volume, speed, download)
-- [ ] Visual feedback: play icon morphs to pause, progress bar fills
-- [ ] Multiple players supported (featured + episode cards)
-- [ ] Sample audio URL (royalty-free CDN sample)
-- [ ] Commit: "feat: interactive JS — menu, i18n, audio player, animations"
+- [x] `audio-player.js` — custom controls (play/pause, seek, time, volume, speed, download)
+- [x] Visual feedback: play icon morphs to pause, progress bar fills
+- [x] Multiple players supported (featured + episode cards)
+- [x] Sample audio URL (royalty-free CDN sample)
+- [x] Commit: "feat: interactive JS — menu, i18n, audio player, animations"
 
 ### Phase 9 — SEO & Accessibility Polish
 - [ ] Semantic landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
