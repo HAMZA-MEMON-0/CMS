@@ -1,10 +1,11 @@
 (function () {
-  const STORAGE_LANG_KEY = 'inara.lang';
+  const STORAGE_LANG_KEY = 'noor.lang';
+  const STORAGE_THEME_KEY = 'noor.theme';
   const SUPPORTED_LANGS = ['en', 'ur', 'ar'];
   const RTL_LANGS = ['ur', 'ar'];
   const LANG_LABELS = { en: 'EN', ur: 'اردو', ar: 'العربية' };
 
-  const translations = window.INARA_TRANSLATIONS || {};
+  const translations = window.NOOR_TRANSLATIONS || {};
 
   function $(sel, root = document) {
     return root.querySelector(sel);
@@ -82,6 +83,46 @@
     setLanguage(saved);
   }
 
+  function setTheme(theme) {
+    if (theme !== 'dark' && theme !== 'light') theme = 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem(STORAGE_THEME_KEY, theme);
+    } catch (e) {}
+    const toggle = $('#themeToggle');
+    if (toggle) {
+      toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute('content', theme === 'dark' ? '#07070D' : '#5B47E0');
+    }
+  }
+
+  function initThemeToggle() {
+    const toggle = $('#themeToggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    toggle.setAttribute('aria-label', current === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+
+    if (window.matchMedia) {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const listener = (e) => {
+        let stored = null;
+        try { stored = localStorage.getItem(STORAGE_THEME_KEY); } catch (err) {}
+        if (!stored) setTheme(e.matches ? 'dark' : 'light');
+      };
+      if (mq.addEventListener) mq.addEventListener('change', listener);
+      else if (mq.addListener) mq.addListener(listener);
+    }
+  }
+
   function initMobileNav() {
     const hamburger = $('#hamburger');
     const mobileNav = $('#mobileNav');
@@ -123,7 +164,7 @@
     let ticking = false;
 
     function update() {
-      header.classList.toggle('scrolled', window.scrollY > 12);
+      header.classList.toggle('scrolled', window.scrollY > 40);
       ticking = false;
     }
 
@@ -220,7 +261,10 @@
       for (const s of sections) {
         if (s.section.offsetTop <= offset) active = s;
       }
-      links.forEach((l) => l.classList.remove('active'));
+      links.forEach((l) => {
+        l.classList.remove('active');
+        l.removeAttribute('aria-current');
+      });
       if (active) {
         active.link.classList.add('active');
         active.link.setAttribute('aria-current', 'page');
@@ -244,12 +288,14 @@
 
       if (!emailRegex.test(value)) {
         message.textContent = dict.newsletterError || 'Please enter a valid email.';
-        message.style.color = '#ffe5e5';
+        message.dataset.state = 'error';
+        message.style.color = '#FECACA';
         return;
       }
 
       message.textContent = dict.newsletterSuccess || 'Thanks for subscribing!';
-      message.style.color = '#ffffff';
+      message.dataset.state = 'success';
+      message.style.color = '#FFFFFF';
       input.value = '';
       input.blur();
     });
@@ -312,22 +358,22 @@
   }
 
   function showToast(text) {
-    let toast = $('#inaraToast');
+    let toast = $('#noorToast');
     if (!toast) {
       toast = document.createElement('div');
-      toast.id = 'inaraToast';
+      toast.id = 'noorToast';
       Object.assign(toast.style, {
         position: 'fixed',
         bottom: '32px',
         left: '50%',
         transform: 'translateX(-50%) translateY(20px)',
-        background: '#2C5F8D',
+        background: 'linear-gradient(135deg, #5B47E0 0%, #EC4899 100%)',
         color: 'white',
         padding: '12px 24px',
         borderRadius: '999px',
         fontSize: '0.875rem',
         fontWeight: '600',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+        boxShadow: '0 16px 40px rgba(91, 71, 224, 0.4)',
         opacity: '0',
         transition: 'all 0.3s ease',
         zIndex: '9999',
@@ -365,6 +411,7 @@
   }
 
   function init() {
+    initThemeToggle();
     initLanguageSwitcher();
     initMobileNav();
     initStickyHeader();

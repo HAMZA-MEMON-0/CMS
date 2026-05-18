@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title data-i18n="metaTitle">Inara — Light for a Better World | Social Entrepreneurship & Advocacy</title>
+  <title data-i18n="metaTitle">Noor — Light the Way | Social Entrepreneurship & Advocacy</title>
 
-  <meta name="description" content="Inara is a global social entrepreneurship and advocacy platform empowering communities across health, education, justice, environment, gender equality, and sustainable development.">
-  <meta name="keywords" content="social entrepreneurship, advocacy, health, education, justice, environment, gender equality, sustainable development, peace, diplomacy, global change, Inara">
-  <meta name="author" content="Inara">
-  <meta name="theme-color" content="#2C5F8D">
+  <meta name="description" content="Noor is a global social entrepreneurship and advocacy platform empowering communities across health, education, justice, environment, gender equality, and sustainable development.">
+  <meta name="keywords" content="social entrepreneurship, advocacy, health, education, justice, environment, gender equality, sustainable development, peace, diplomacy, global change, Noor">
+  <meta name="author" content="Noor">
+  <meta name="theme-color" content="#5B47E0">
+  <meta name="color-scheme" content="light dark">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Inara — Light for a Better World">
+  <meta property="og:title" content="Noor — Light the Way">
   <meta property="og:description" content="Advocacy, awareness, and action across eight pillars of global change.">
-  <meta property="og:url" content="https://inara-platform.netlify.app">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&h=630&fit=crop&auto=format&q=80">
-  <meta property="og:site_name" content="Inara">
+  <meta property="og:url" content="https://noor-platform.netlify.app">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1200&h=630&fit=crop&auto=format&q=85">
+  <meta property="og:site_name" content="Noor">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Inara — Light for a Better World">
+  <meta name="twitter:title" content="Noor — Light the Way">
   <meta name="twitter:description" content="Advocacy, awareness, and action across eight pillars of global change.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&h=630&fit=crop&auto=format&q=80">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1200&h=630&fit=crop&auto=format&q=85">
 
-  <link rel="canonical" href="https://inara-platform.netlify.app/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%232C5F8D'/%3E%3Ctext x='32' y='44' font-family='Poppins,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='white'%3EI%3C/text%3E%3C/svg%3E">
+  <link rel="canonical" href="https://noor-platform.netlify.app/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%235B47E0'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Plus Jakarta Sans,sans-serif' font-size='34' font-weight='800' text-anchor='middle' fill='white'%3EN%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://images.unsplash.com">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('noor.theme');
+        var prefers = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefers ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Inara",
-    "alternateName": "Inara Global Advocacy",
-    "url": "https://inara-platform.netlify.app",
-    "logo": "https://inara-platform.netlify.app/images/logo.svg",
+    "name": "Noor",
+    "alternateName": "Noor Global Advocacy",
+    "url": "https://noor-platform.netlify.app",
+    "logo": "https://noor-platform.netlify.app/images/logo.svg",
     "description": "Global social entrepreneurship and advocacy platform.",
     "sameAs": [
-      "https://facebook.com/inara",
-      "https://twitter.com/inara",
-      "https://instagram.com/inara",
-      "https://linkedin.com/company/inara"
+      "https://facebook.com/noor",
+      "https://twitter.com/noor",
+      "https://instagram.com/noor",
+      "https://linkedin.com/company/noor"
     ],
     "areaServed": "Worldwide",
     "knowsAbout": ["Health", "Education", "Justice", "Environment", "Gender Equality", "Sustainable Communities", "Economic Growth", "Peace and Diplomacy"]
@@ -62,13 +74,13 @@
 
   <header class="header" id="header">
     <div class="nav-container">
-      <a href="#home" class="brand" aria-label="Inara — home">
+      <a href="#home" class="brand" aria-label="Noor — home">
         <span class="brand-mark" aria-hidden="true">
           <i class="fa-solid fa-sun"></i>
         </span>
         <span class="brand-text">
-          <span class="brand-name">Inara</span>
-          <span class="brand-tagline" data-i18n="brandTagline">Light for a Better World</span>
+          <span class="brand-name">Noor</span>
+          <span class="brand-tagline" data-i18n="brandTagline">Light the Way</span>
         </span>
       </a>
 
@@ -96,6 +108,11 @@
             </button>
           </form>
         </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+        </button>
 
         <div class="language-switcher" id="languageSwitcher">
           <button class="lang-current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">
@@ -149,12 +166,18 @@
   <main id="main">
     <section id="home" class="hero">
       <div class="hero-bg" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&h=1080&fit=crop&auto=format&q=80" alt="">
+        <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1920&h=1080&fit=crop&auto=format&q=85" alt="">
         <div class="hero-overlay"></div>
       </div>
+      <span class="hero-blob hero-blob-1" aria-hidden="true"></span>
+      <span class="hero-blob hero-blob-2" aria-hidden="true"></span>
+
       <div class="hero-content">
         <span class="hero-eyebrow" data-i18n="heroEyebrow">Global Advocacy Platform</span>
-        <h1 class="hero-title" data-i18n="heroTitle">Empowering Global Communities for Sustainable Change</h1>
+        <h1 class="hero-title">
+          <span data-i18n="heroTitlePart1">Empowering Global Communities for</span>
+          <span class="grad" data-i18n="heroTitlePart2">Sustainable Change</span>
+        </h1>
         <p class="hero-subtitle" data-i18n="heroSubtitle">Advocacy, awareness, and action across Health, Education, Justice, Environment, Gender Equality, and beyond.</p>
         <div class="hero-actions">
           <a href="#focus" class="btn btn-primary" data-i18n="heroCtaPrimary">Explore Our Mission</a>
@@ -162,8 +185,8 @@
         </div>
         <div class="hero-stats">
           <div class="stat"><strong>50K+</strong><span data-i18n="statReach">Lives Reached</span></div>
-          <div class="stat"><strong>120+</strong><span data-i18n="statPartners">Partner Organizations</span></div>
-          <div class="stat"><strong>45</strong><span data-i18n="statCountries">Countries Served</span></div>
+          <div class="stat"><strong>120+</strong><span data-i18n="statPartners">Partners</span></div>
+          <div class="stat"><strong>45</strong><span data-i18n="statCountries">Countries</span></div>
         </div>
       </div>
       <a href="#focus" class="scroll-indicator" aria-label="Scroll to content">
@@ -175,7 +198,7 @@
       <div class="container">
         <header class="section-head animate-on-scroll">
           <span class="section-eyebrow" data-i18n="focusEyebrow">What We Stand For</span>
-          <h2 class="section-title" data-i18n="focusTitle">Our Impact Areas</h2>
+          <h2 class="section-title"><span data-i18n="focusTitlePart1">Our</span> <span class="grad" data-i18n="focusTitlePart2">Impact Areas</span></h2>
           <p class="section-subtitle" data-i18n="focusSubtitle">Eight pillars guiding our work toward a fairer, healthier, more sustainable world.</p>
         </header>
 
@@ -243,14 +266,14 @@
       <div class="container">
         <header class="section-head animate-on-scroll">
           <span class="section-eyebrow" data-i18n="articlesEyebrow">From Our Newsroom</span>
-          <h2 class="section-title" data-i18n="articlesTitle">Latest Articles &amp; Insights</h2>
+          <h2 class="section-title"><span data-i18n="articlesTitlePart1">Latest</span> <span class="grad" data-i18n="articlesTitlePart2">Articles &amp; Insights</span></h2>
           <p class="section-subtitle" data-i18n="articlesSubtitle">Stories, research, and perspectives from advocates around the world.</p>
         </header>
 
         <div class="articles-grid">
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=450&fit=crop&auto=format&q=80" alt="Healthcare worker visiting a rural community" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=500&fit=crop&auto=format&q=85" alt="Healthcare worker visiting a rural community" loading="lazy">
               <span class="article-tag" data-accent="red" data-i18n="catHealth">Health</span>
             </a>
             <div class="article-body">
@@ -266,7 +289,7 @@
 
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=450&fit=crop&auto=format&q=80" alt="Children learning in a community classroom" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop&auto=format&q=85" alt="Children learning in a community classroom" loading="lazy">
               <span class="article-tag" data-accent="orange" data-i18n="catEducation">Education</span>
             </a>
             <div class="article-body">
@@ -282,7 +305,7 @@
 
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=450&fit=crop&auto=format&q=80" alt="Volunteers planting trees in a coastal area" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=500&fit=crop&auto=format&q=85" alt="Volunteers planting trees in a coastal area" loading="lazy">
               <span class="article-tag" data-accent="green" data-i18n="catEnvironment">Environment</span>
             </a>
             <div class="article-body">
@@ -298,7 +321,7 @@
 
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800&h=450&fit=crop&auto=format&q=80" alt="Women leaders convening at a roundtable" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=500&fit=crop&auto=format&q=85" alt="Women leaders convening at a roundtable" loading="lazy">
               <span class="article-tag" data-accent="purple" data-i18n="catGender">Gender Equality</span>
             </a>
             <div class="article-body">
@@ -314,7 +337,7 @@
 
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&h=450&fit=crop&auto=format&q=80" alt="Community legal-aid workshop" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=500&fit=crop&auto=format&q=85" alt="Community legal-aid workshop" loading="lazy">
               <span class="article-tag" data-accent="purple" data-i18n="catJustice">Justice</span>
             </a>
             <div class="article-body">
@@ -330,7 +353,7 @@
 
           <article class="article-card animate-on-scroll">
             <a href="#" class="article-thumb">
-              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=450&fit=crop&auto=format&q=80" alt="Young entrepreneur reviewing market figures" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=500&fit=crop&auto=format&q=85" alt="Young entrepreneur reviewing market figures" loading="lazy">
               <span class="article-tag" data-accent="orange" data-i18n="catEconomy">Economic Growth</span>
             </a>
             <div class="article-body">
@@ -354,18 +377,18 @@
     <section id="media" class="media section">
       <div class="container">
         <header class="section-head animate-on-scroll">
-          <span class="section-eyebrow" data-i18n="mediaEyebrow">Listen &amp; Watch</span>
-          <h2 class="section-title" data-i18n="mediaTitle">Our Media Library</h2>
-          <p class="section-subtitle" data-i18n="mediaSubtitle">Podcasts, interviews, and video stories from the frontlines of change.</p>
+          <span class="section-eyebrow light" data-i18n="mediaEyebrow">Listen &amp; Watch</span>
+          <h2 class="section-title light"><span data-i18n="mediaTitlePart1">Our</span> <span class="grad" data-i18n="mediaTitlePart2">Media Library</span></h2>
+          <p class="section-subtitle light" data-i18n="mediaSubtitle">Podcasts, interviews, and video stories from the frontlines of change.</p>
         </header>
 
         <div class="featured-episode animate-on-scroll">
           <div class="episode-art">
-            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&h=800&fit=crop&auto=format&q=80" alt="Podcast featured episode artwork">
+            <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&h=800&fit=crop&auto=format&q=85" alt="Podcast featured episode artwork">
             <span class="featured-badge" data-i18n="featuredEpisode">Featured Episode</span>
           </div>
           <div class="episode-details">
-            <span class="episode-meta"><i class="fa-solid fa-microphone"></i> <span data-i18n="podcastName">The Inara Podcast</span> · <span data-i18n="episodeNumber">Episode 24</span></span>
+            <span class="episode-meta"><i class="fa-solid fa-microphone"></i> <span data-i18n="podcastName">The Noor Podcast</span> · <span data-i18n="episodeNumber">Episode 24</span></span>
             <h3 data-i18n="featuredEpisodeTitle">Voices of Change: A Conversation with Frontline Advocates</h3>
             <p data-i18n="featuredEpisodeDesc">Three changemakers across three continents discuss what it takes to build movements that last — and why hope is a strategy.</p>
             <div class="audio-player" data-audio-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
@@ -385,7 +408,7 @@
         <div class="episodes-grid">
           <article class="episode-card animate-on-scroll">
             <div class="episode-thumb">
-              <img src="https://images.unsplash.com/photo-1487537708572-3c850b5e856e?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?w=400&h=400&fit=crop&auto=format&q=85" alt="">
               <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
             </div>
             <h4 data-i18n="ep1Title">Climate Justice Beyond Borders</h4>
@@ -394,7 +417,7 @@
 
           <article class="episode-card animate-on-scroll">
             <div class="episode-thumb">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=400&h=400&fit=crop&auto=format&q=85" alt="">
               <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
             </div>
             <h4 data-i18n="ep2Title">The Future of Public Education</h4>
@@ -403,7 +426,7 @@
 
           <article class="episode-card animate-on-scroll">
             <div class="episode-thumb">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=400&h=400&fit=crop&auto=format&q=85" alt="">
               <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
             </div>
             <h4 data-i18n="ep3Title">Building Peace After Conflict</h4>
@@ -412,7 +435,7 @@
 
           <article class="episode-card animate-on-scroll">
             <div class="episode-thumb">
-              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=400&fit=crop&auto=format&q=80" alt="">
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400&h=400&fit=crop&auto=format&q=85" alt="">
               <button class="ep-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
             </div>
             <h4 data-i18n="ep4Title">Why Local Leadership Wins</h4>
@@ -422,7 +445,7 @@
 
         <div class="tts-note animate-on-scroll">
           <i class="fa-solid fa-volume-high"></i>
-          <span data-i18n="ttsNote">Every Inara article includes text-to-speech for accessibility — look for the headphones icon.</span>
+          <span data-i18n="ttsNote">Every Noor article includes text-to-speech for accessibility — look for the headphones icon.</span>
         </div>
       </div>
     </section>
@@ -431,21 +454,21 @@
       <div class="container">
         <header class="section-head animate-on-scroll">
           <span class="section-eyebrow" data-i18n="projectsEyebrow">In Action</span>
-          <h2 class="section-title" data-i18n="projectsTitle">Active Projects &amp; Campaigns</h2>
+          <h2 class="section-title"><span data-i18n="projectsTitlePart1">Active</span> <span class="grad" data-i18n="projectsTitlePart2">Projects &amp; Campaigns</span></h2>
           <p class="section-subtitle" data-i18n="projectsSubtitle">Initiatives turning advocacy into measurable impact, right now.</p>
         </header>
 
         <div class="projects-grid">
           <article class="project-card project-featured animate-on-scroll">
-            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=900&fit=crop&auto=format&q=80" alt="Children at a community learning centre">
+            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1200&h=900&fit=crop&auto=format&q=85" alt="Children at a community learning centre">
             <div class="project-overlay">
               <span class="project-badge" data-i18n="featuredProject">Featured Project</span>
               <h3 data-i18n="project1Title">Schools Without Walls</h3>
               <p class="project-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="project1Location">East Africa &amp; South Asia</span></p>
               <p data-i18n="project1Desc">Bringing classrooms to children in remote communities through mobile learning hubs, solar-powered tablets, and locally trained teachers.</p>
               <div class="project-stats">
-                <div><strong>12,400</strong><span data-i18n="statStudents">Students Enrolled</span></div>
-                <div><strong>87</strong><span data-i18n="statTeachers">Teachers Trained</span></div>
+                <div><strong>12,400</strong><span data-i18n="statStudents">Students</span></div>
+                <div><strong>87</strong><span data-i18n="statTeachers">Teachers</span></div>
                 <div><strong>34</strong><span data-i18n="statVillages">Villages</span></div>
               </div>
               <a href="#" class="btn btn-primary" data-i18n="learnMoreCta">Learn More</a>
@@ -453,7 +476,7 @@
           </article>
 
           <article class="project-card animate-on-scroll">
-            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&h=600&fit=crop&auto=format&q=85" alt="">
             <div class="project-overlay">
               <span class="project-status status-active" data-i18n="statusActive">Active</span>
               <h3 data-i18n="project2Title">Clean Rivers Initiative</h3>
@@ -462,7 +485,7 @@
           </article>
 
           <article class="project-card animate-on-scroll">
-            <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=600&fit=crop&auto=format&q=85" alt="">
             <div class="project-overlay">
               <span class="project-status status-active" data-i18n="statusActive">Active</span>
               <h3 data-i18n="project3Title">Voices of the Unheard</h3>
@@ -471,7 +494,7 @@
           </article>
 
           <article class="project-card animate-on-scroll">
-            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop&auto=format&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop&auto=format&q=85" alt="">
             <div class="project-overlay">
               <span class="project-status status-complete" data-i18n="statusComplete">Completed</span>
               <h3 data-i18n="project4Title">Health Outreach 2025</h3>
@@ -486,7 +509,7 @@
       <div class="container">
         <header class="section-head animate-on-scroll">
           <span class="section-eyebrow" data-i18n="partnersEyebrow">Stronger Together</span>
-          <h2 class="section-title" data-i18n="partnersTitle">Our Global Partners</h2>
+          <h2 class="section-title"><span data-i18n="partnersTitlePart1">Our</span> <span class="grad" data-i18n="partnersTitlePart2">Global Partners</span></h2>
           <p class="section-subtitle" data-i18n="partnersSubtitle">Collaborating with NGOs, institutions, and visionary organisations.</p>
         </header>
 
@@ -507,7 +530,7 @@
 
         <div class="partners-cta animate-on-scroll">
           <p data-i18n="partnersCtaText">Interested in partnering with us to drive global change?</p>
-          <a href="#contact" class="btn btn-outline-dark" data-i18n="partnersCtaBtn">Become a Partner</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="partnersCtaBtn">Become a Partner</a>
         </div>
       </div>
     </section>
@@ -525,7 +548,7 @@
             <header class="feed-head">
               <i class="fa-brands fa-x-twitter"></i>
               <div>
-                <strong>@inara_global</strong>
+                <strong>@noor_global</strong>
                 <span data-i18n="followUs">Follow us</span>
               </div>
             </header>
@@ -535,7 +558,7 @@
                 <small>2h · 124 reposts · 480 likes</small>
               </div>
               <div class="feed-post">
-                <p data-i18n="twitterPost2">Episode 24 of the Inara Podcast is live — three frontline advocates on what hope looks like in 2026. 🎧</p>
+                <p data-i18n="twitterPost2">Episode 24 of the Noor Podcast is live — three frontline advocates on what hope looks like in 2026. 🎧</p>
                 <small>1d · 86 reposts · 312 likes</small>
               </div>
             </div>
@@ -546,7 +569,7 @@
             <header class="feed-head">
               <i class="fa-brands fa-facebook-f"></i>
               <div>
-                <strong>Inara Global</strong>
+                <strong>Noor Global</strong>
                 <span data-i18n="likeUs">Like our page</span>
               </div>
             </header>
@@ -567,7 +590,7 @@
             <header class="feed-head">
               <i class="fa-brands fa-instagram"></i>
               <div>
-                <strong>@inara.global</strong>
+                <strong>@noor.global</strong>
                 <span data-i18n="followUs">Follow us</span>
               </div>
             </header>
@@ -596,7 +619,7 @@
           <form class="newsletter-form" id="newsletterForm">
             <label class="sr-only" for="newsletterEmail" data-i18n="emailLabel">Email address</label>
             <input id="newsletterEmail" type="email" required placeholder="Enter your email address" data-i18n-placeholder="newsletterPlaceholder">
-            <button type="submit" class="btn btn-primary-dark" data-i18n="subscribe">Subscribe</button>
+            <button type="submit" data-i18n="subscribe">Subscribe</button>
           </form>
           <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
           <ul class="newsletter-trust">
@@ -615,9 +638,12 @@
         <div class="footer-col footer-brand">
           <a href="#home" class="brand brand-footer">
             <span class="brand-mark"><i class="fa-solid fa-sun"></i></span>
-            <span class="brand-name">Inara</span>
+            <span class="brand-text">
+              <span class="brand-name">Noor</span>
+              <span class="brand-tagline" data-i18n="brandTagline">Light the Way</span>
+            </span>
           </a>
-          <p data-i18n="footerMission">Inara is a global platform for social entrepreneurship and advocacy, amplifying voices and accelerating action across eight pillars of change.</p>
+          <p data-i18n="footerMission">Noor is a global platform for social entrepreneurship and advocacy, amplifying voices and accelerating action across eight pillars of change.</p>
           <div class="footer-socials">
             <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
@@ -656,7 +682,7 @@
         <div class="footer-col">
           <h4 data-i18n="footerConnect">Connect</h4>
           <ul class="footer-contact">
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@inara-platform.org">hello@inara-platform.org</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@noor-platform.org">hello@noor-platform.org</a></li>
             <li><i class="fa-solid fa-phone"></i> <a href="tel:+923138113962">+92 313 811 3962</a></li>
             <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="footerLocation">Global · Headquartered in Karachi, Pakistan</span></li>
           </ul>
@@ -665,7 +691,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="footerYear">2026</span> Inara. <span data-i18n="footerRights">All rights reserved.</span> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>&copy; <span id="footerYear">2026</span> Noor. <span data-i18n="footerRights">All rights reserved.</span> · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
         <p class="dev-credit">
           <span data-i18n="footerDesigned">Designed &amp; Developed by</span>
           <a href="https://hamza-memon-0.github.io/my-portfolio/" target="_blank" rel="noopener"><strong>Hamza Memon</strong></a> ·

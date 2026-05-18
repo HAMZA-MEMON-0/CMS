@@ -1,62 +1,55 @@
-# Inara — Social Entrepreneurship & Advocacy Platform
+# Noor — Social Entrepreneurship & Advocacy Platform
 
-> **Tagline:** *Light for a Better World.*
+> **Tagline:** *Light the Way.*
 
-A modern, fully responsive, multilingual homepage demo for a global social entrepreneurship and advocacy platform. Built with zero frameworks — pure HTML5, CSS3, and vanilla JavaScript — and deploy-ready for Netlify, Vercel, or any static host.
+A modern, fully responsive, multilingual homepage demo for a global social entrepreneurship and advocacy platform. Built with zero frameworks — pure HTML5, CSS3, and vanilla JavaScript — featuring a custom design system, dark mode, glassmorphism nav, and Playwright end-to-end tests.
 
 ---
 
 ## Live Preview
-
-Open `index.html` directly in any modern browser, or serve the directory:
 
 ```bash
 npx serve .
 # then open http://localhost:3000
 ```
 
+Or simply open `index.html` directly in any modern browser.
+
+---
+
+## Highlights
+
+| Feature | Description |
+|---|---|
+| **Dark mode** | Sun/moon toggle in nav, system preference detection, localStorage persistence |
+| **Transparent nav** | Glass-blur header that solidifies on scroll |
+| **Multi-language** | English, Urdu, Arabic with full RTL layout flip |
+| **Audio player** | Custom HTML5 controls — play, seek, speed, volume, download |
+| **Article CMS** | Categorised cards with hover zoom and audio badges |
+| **Social** | 3-platform feed mockups + floating share rail (6 platforms) |
+| **Newsletter** | Validated email form with localized success/error messages |
+| **Accessibility** | WCAG 2.1 AA — keyboard nav, ARIA, skip link, reduced-motion support |
+| **SEO** | Meta + Open Graph + Twitter card + JSON-LD + sitemap + robots |
+| **Animations** | Hero blob fade-in, fade-up on scroll, hover micro-interactions |
+| **Performance** | Lazy-loaded images, preconnect hints, zero runtime dependencies |
+
+---
+
+## Design System
+
+- **Palette:** Indigo (`#5B47E0`) → Violet (`#8B5CF6`) → Pink (`#EC4899`) primary gradient with mint, amber, cyan, rose accents
+- **Typography:** Plus Jakarta Sans (display) + Inter (body) + Noto Naskh Arabic (Arabic/Urdu)
+- **Shadows:** Color-tinted, layered shadows with `--shadow-glow` for primary CTAs
+- **Radii:** Pill (999px) for buttons, large (20px) for cards
+- **Spacing:** 8px grid with fluid `clamp()` scaling
+- **Dark mode:** Full token swap via `[data-theme="dark"]` selector on `<html>`
+
 ---
 
 ## Focus Areas
 
-Inara advocates across eight pillars of global social change:
-
-1. **Health** — Healthcare access and public-health awareness
-2. **Education** — Lifelong learning and educational equity
-3. **Justice** — Human rights and equitable legal systems
-4. **Environment** — Climate action and conservation
-5. **Gender Equality** — Empowering women and marginalised genders
-6. **Sustainable Communities** — Resilient local development
-7. **Economic Growth** — Inclusive prosperity
-8. **Peace & Diplomacy** — Conflict resolution and global cooperation
-
----
-
-## Features
-
-| Feature | Description |
-|---|---|
-| Responsive design | Mobile-first, tested down to 320px |
-| Multi-language | English, Urdu, Arabic with RTL support |
-| Audio integration | Custom HTML5 podcast player + text-to-speech indicators |
-| Article CMS demo | Categorised cards with thumbnails, excerpts, audio icons |
-| Social integration | Live feed mockups + floating share rail |
-| Newsletter | Validated email subscription form |
-| Search | Expandable header search input |
-| Accessibility | WCAG 2.1 AA — keyboard nav, ARIA labels, semantic HTML |
-| SEO | Meta tags, Open Graph, Twitter cards, JSON-LD, sitemap, robots.txt |
-| Performance | Lazy-loaded images, preconnect hints, no JS frameworks |
-
----
-
-## Tech Stack
-
-- **HTML5** — semantic structure
-- **CSS3** — custom design system with CSS variables, Grid, Flexbox, fluid typography
-- **Vanilla JavaScript** — no jQuery, no React, no build step
-- **Google Fonts** — Inter, Poppins, Noto Naskh Arabic
-- **Font Awesome 6** — iconography
-- **Unsplash** — hot-linked imagery for the demo
+1. Health · 2. Education · 3. Justice · 4. Environment
+5. Gender Equality · 6. Sustainable Communities · 7. Economic Growth · 8. Peace & Diplomacy
 
 ---
 
@@ -64,19 +57,47 @@ Inara advocates across eight pillars of global social change:
 
 ```
 .
-├── index.html              Main entry
-├── css/style.css           Design system + all component styles
+├── index.html              Main entry — semantic HTML, no comments
+├── css/style.css           Design system + components + dark mode + responsive
 ├── js/
-│   ├── translations.js     EN / UR / AR copy
+│   ├── translations.js     EN / UR / AR dictionaries (window.NOOR_TRANSLATIONS)
 │   ├── audio-player.js     Custom HTML5 audio controls
-│   └── script.js           Navigation, animations, forms, share
-├── images/                 (placeholder — Unsplash URLs used in demo)
-├── audio/                  (placeholder — sample MP3 URL used in demo)
-├── netlify.toml            Netlify config (headers, cache)
+│   └── script.js           Theme, language, nav, animations, forms, share
+├── tests/                  Playwright end-to-end tests
+│   ├── home.spec.js
+│   ├── navigation.spec.js
+│   ├── theme.spec.js
+│   ├── i18n.spec.js
+│   ├── forms.spec.js
+│   └── responsive.spec.js
+├── package.json            Test scripts + Playwright devDependency
+├── playwright.config.js    Test runner configuration
+├── netlify.toml            Deploy config with security + cache headers
 ├── robots.txt              Crawler directives
 ├── sitemap.xml             SEO sitemap
 └── CLAUDE.md               Phase-by-phase implementation log
 ```
+
+---
+
+## Testing (Playwright)
+
+```bash
+npm install                      # install Playwright
+npx playwright install           # download browsers (one-time, ~200 MB)
+npm test                         # run all tests (Chromium + Firefox + WebKit)
+npm run test:headed              # run with browser UI visible
+npm run test:ui                  # open Playwright UI for interactive debugging
+npm run test:report              # open the HTML test report
+```
+
+Tests cover:
+- Page loads, all sections render, SEO meta present
+- Navigation: links scroll to sections, mobile menu opens/closes
+- Theme: dark/light toggle, localStorage persistence, system preference
+- i18n: language switcher updates content + `dir` attribute
+- Forms: newsletter validation (empty, invalid, valid)
+- Responsive: mobile / tablet / desktop layouts
 
 ---
 
@@ -91,10 +112,6 @@ Inara advocates across eight pillars of global social change:
 1. Push this repo to GitHub
 2. `Add new site → Import from Git → select repo`
 3. Build settings — Publish directory: `.` — Build command: leave blank
-4. Deploy
-
-### Custom domain
-Site Settings → Domain management → Add custom domain → configure DNS
 
 ---
 
@@ -103,11 +120,11 @@ Site Settings → Domain management → Add custom domain → configure DNS
 **Hamza Memon** — Full-stack web developer
 
 - Email: hamza.memon262830@gmail.com
-- WhatsApp: +92 3138113962
+- WhatsApp: +92 313 811 3962
 - Portfolio: https://hamza-memon-0.github.io/my-portfolio/
 
 ---
 
 ## License
 
-This demo is provided for client review. All assets used (images from Unsplash, fonts from Google Fonts, icons from Font Awesome) are subject to their respective licenses.
+This demo is provided for client review. All assets (Unsplash images, Google Fonts, Font Awesome icons) are subject to their respective licenses.

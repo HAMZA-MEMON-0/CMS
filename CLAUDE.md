@@ -149,14 +149,37 @@ CMS/
 - [x] No hardcoded English in JS (all via translations)
 - [x] Final commit: "docs: mark all phases complete in CLAUDE.md"
 
+### Phase 11 — Visual Overhaul & Dark Mode (v2)
+- [x] Renamed brand: Inara → **Noor** (tagline: "Light the Way")
+- [x] Redesign palette: indigo/violet/pink primary gradient with mint/amber/cyan/rose accents
+- [x] Typography upgrade: Plus Jakarta Sans (display) + Inter (body)
+- [x] Dark mode toggle in nav (sun/moon icon with rotate animation)
+- [x] `data-theme="light|dark"` on `<html>`, localStorage persistence (key `noor.theme`)
+- [x] Default to system preference via `prefers-color-scheme` (inline pre-load script prevents FOUC)
+- [x] Transparent navbar over hero → glass+solid after scroll
+- [x] Glassmorphism on nav, share rail, cards, social feeds, hero stats card
+- [x] Refined shadows (color-tinted), gradient borders on focus cards
+- [x] Higher-quality, topical Unsplash images across all sections
+- [x] Animated hero blobs + gradient text on titles
+- [x] Smooth `transition` on theme variables (color, background)
+- [x] All accent colors re-mapped for both themes
+- [x] Commit "style: v2 modern design system + dark mode"
+
+### Phase 12 — Playwright E2E Tests
+- [ ] `package.json` with @playwright/test devDependency + scripts
+- [ ] `playwright.config.js` with webServer (npx serve) + 3 browsers
+- [ ] `tests/home.spec.js` — page loads, sections render, SEO meta present
+- [ ] `tests/navigation.spec.js` — nav links scroll, mobile menu opens
+- [ ] `tests/theme.spec.js` — toggle dark/light, localStorage persistence
+- [ ] `tests/i18n.spec.js` — language switcher updates content + dir attr
+- [ ] `tests/forms.spec.js` — newsletter validation, search behaviour
+- [ ] `tests/responsive.spec.js` — mobile / tablet / desktop layouts
+- [ ] README updated with `npm test` instructions
+- [ ] Commit "test: Playwright end-to-end test suite"
+
 ---
 
-## ✅ Build Complete
-
-All ten phases are complete. The demo is ready to:
-1. **Preview** — open `index.html` in any modern browser.
-2. **Serve locally** — `npx serve .` or any static server.
-3. **Deploy** — drag the project folder to https://app.netlify.com/drop, or connect this repo to Netlify/Vercel/GitHub Pages.
+## ✅ Build Status
 
 Git history (use `git log --oneline`):
 1. `chore: project foundation and configuration`
@@ -164,6 +187,12 @@ Git history (use `git log --oneline`):
 3. `style: complete design system, components, and responsive layouts`
 4. `feat: interactive JavaScript layer`
 5. `docs: mark all phases complete in CLAUDE.md`
+6. *(coming)* `style: v2 modern design system + dark mode`
+7. *(coming)* `test: Playwright end-to-end test suite`
+
+To preview: `npx serve .` (or open `index.html` directly).
+To run tests: `npm install && npm test`.
+To deploy: drag the folder to https://app.netlify.com/drop.
 
 ---
 
