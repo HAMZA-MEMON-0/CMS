@@ -166,16 +166,17 @@ CMS/
 - [x] Commit "style: v2 modern design system + dark mode"
 
 ### Phase 12 — Playwright E2E Tests
-- [ ] `package.json` with @playwright/test devDependency + scripts
-- [ ] `playwright.config.js` with webServer (npx serve) + 3 browsers
-- [ ] `tests/home.spec.js` — page loads, sections render, SEO meta present
-- [ ] `tests/navigation.spec.js` — nav links scroll, mobile menu opens
-- [ ] `tests/theme.spec.js` — toggle dark/light, localStorage persistence
-- [ ] `tests/i18n.spec.js` — language switcher updates content + dir attr
-- [ ] `tests/forms.spec.js` — newsletter validation, search behaviour
-- [ ] `tests/responsive.spec.js` — mobile / tablet / desktop layouts
-- [ ] README updated with `npm test` instructions
-- [ ] Commit "test: Playwright end-to-end test suite"
+- [x] `package.json` with @playwright/test + serve devDependencies + scripts
+- [x] `playwright.config.js` with webServer (serve on :4173) + 4 projects
+- [x] `tests/home.spec.js` — 13 tests: page loads, sections render, SEO meta, JSON-LD, back-to-top
+- [x] `tests/navigation.spec.js` — 7 tests: nav links, transparent header, scroll behaviour, share rail
+- [x] `tests/theme.spec.js` — 8 tests: toggle, localStorage persistence, prefers-color-scheme, dark bg
+- [x] `tests/i18n.spec.js` — 10 tests: language switcher, content translation, dir attribute, persistence
+- [x] `tests/forms.spec.js` — 7 tests: newsletter validation (valid/invalid), search expand/focus/close
+- [x] `tests/responsive.spec.js` — 10 tests: mobile/tablet/desktop, hamburger, share rail visibility
+- [x] README updated with `npm test` instructions
+- [x] **55/55 tests pass on Chromium (2.8 min)**
+- [x] Commit "test: Playwright end-to-end test suite"
 
 ---
 
@@ -187,8 +188,8 @@ Git history (use `git log --oneline`):
 3. `style: complete design system, components, and responsive layouts`
 4. `feat: interactive JavaScript layer`
 5. `docs: mark all phases complete in CLAUDE.md`
-6. *(coming)* `style: v2 modern design system + dark mode`
-7. *(coming)* `test: Playwright end-to-end test suite`
+6. `style: v2 modern design system, dark mode, Noor rebrand`
+7. `test: Playwright end-to-end test suite (55 tests, all passing)`
 
 To preview: `npx serve .` (or open `index.html` directly).
 To run tests: `npm install && npm test`.
