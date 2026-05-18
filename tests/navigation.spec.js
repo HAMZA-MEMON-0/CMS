@@ -22,6 +22,7 @@ test.describe('Navigation', () => {
   });
 
   test('clicking nav link scrolls page to that section', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
     await page.locator('.nav-menu a[href="#articles"]').click();
     await page.waitForTimeout(1000);
     const scrollY = await page.evaluate(() => window.scrollY);
